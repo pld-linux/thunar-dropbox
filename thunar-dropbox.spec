@@ -23,7 +23,7 @@ from dropbox.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 %{__sed} -i -e 's,${PREFIX}/lib,%{_libdir},' wscript
 
 %build
